@@ -1,0 +1,130 @@
+@media (max-width: 1000px) {
+  .cars {
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+  }
+  .aside {
+    background-color: #333;
+    opacity: 0.8;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: ease-in 0.5s;
+  }
+  aside.show {
+    width: 100vw;
+    transition: ease-in 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  input {
+    width: 150%;
+    padding: 5px;
+    padding: 15px;
+    outline: none;
+    margin: 5px 0px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+  }
+  .confirm {
+    padding: 10px 50px;
+    width: 150%;
+    background-color: rgb(17, 114, 241);
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+  }
+
+  .text-msg {
+    font-size: 18px;
+    color: red;
+    height: 30px;
+    display: none;
+    margin-bottom: 30px;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  .container-modal--notice {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    transition: all ease 0.5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  .modal--notice {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #999;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .modal-title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "PT Sans", sans-serif;
+  }
+  .modal-desc {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "PT Sans", sans-serif;
+  }
+  .modal-img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 840px) {
+  .cars {
+    height: 100%;
+    width: 800px;
+    margin: auto;
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .container-car1 {
+    max-width: 100%;
+  }
+  .modal {
+    width: 500px;
+  }
+  nav ul a {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 430px) {
+  nav ul a {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+  .cars {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
